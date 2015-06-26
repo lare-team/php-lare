@@ -1,5 +1,5 @@
 {
-  "name": "iekadou/php_lare",
+  "name": "lare_team/php_lare",
   "type": "library",
   "description": "Lare implementation for PHP",
   "keywords": ["templating"],
