@@ -1,0 +1,27 @@
+{
+  "name": "iekadou/php_lare",
+  "type": "library",
+  "description": "Lare implementation for PHP",
+  "keywords": ["templating"],
+  "homepage": "http://iekadou.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jonas Braun",
+      "email": "jonas@iekadou.com",
+      "homepage": "http://iekadou.com",
+      "role": "Project Founder"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3"
+  },
+  "autoload": {
+    "files": ["src/PHP_Lare/Lare.php"]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
