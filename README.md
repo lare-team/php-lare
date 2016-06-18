@@ -84,7 +84,7 @@ If this seems to be too complex for you, try [twig](https://github.com/twigphp/T
 
 ## Projects using php-lare
 
-1. [lare.io](https://github.com/iekadou/lare-io)
+1. [iekadou.com](http://iekadou.com)
 
 If you are using php-lare, please contact us, and tell us in which projects you are using it. Thank you!
 
