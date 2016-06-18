@@ -20,9 +20,9 @@ class Lare
 
     static private $instance = null;
 
-    static public function get_instance()
+    static public function get_instance($force=false)
     {
-        if (null === self::$instance) {
+        if (null === self::$instance || $force == true) {
             self::$instance = new self;
             if (isset($_SERVER['HTTP_X_LARE'])) {
                 if (isset($_SERVER['HTTP_X_LARE_VERSION'])) {
@@ -40,7 +40,9 @@ class Lare
                 }
                 self::$enabled = true;
                 self::$previous_namespace = $_SERVER['HTTP_X_LARE'];
-                header('X-LARE-VERSION: '.Lare::$version);
+                if ($force == false) {
+                    header('X-LARE-VERSION: '.Lare::$version);
+                }
             }
         }
         return self::$instance;
